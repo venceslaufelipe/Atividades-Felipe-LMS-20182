@@ -1,0 +1,126 @@
+#art1{
+    border-style: solid;
+    border-color: #E2144A;
+    width: 1100px;
+    margin-left: 244px;
+}
+
+#art2{
+    border-style: dotted;
+    border-color: #E2144A;
+    width: 1100px;
+    margin-left: 244px;
+}
+
+#art3{
+    border-style: solid;
+    border-color: #E2144A;
+    width: 1100px;
+    margin-left: 244px;
+}
+
+#art4{
+    border-style: dashed;
+    border-color: seagreen;
+    width: 1100px;
+    margin-left: 244px;
+}
+
+#art5{
+    border-style: solid;
+    border-color: greenyellow;
+    width: 1100px;
+    margin-left: 244px;
+}
+
+#artigo{
+    position: relative;
+    font-family: Cambria;
+    margin-top: -100px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+#tudo{
+    height: 2780px;
+    width: 1100px;
+    background-color: gray;
+    margin-left: 247px;
+    opacity: 0.7;
+    position: absolute;
+    margin-top: 200px;
+}
+#banner{
+    height: 200px;
+    width: 1100px;
+    background-repeat: repeat-x;
+    background-image: url(img/gradient_bg.png);
+    background-size: 10px 200px;
+    float: initial;
+    margin-left: 247px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: url(img/fundo.jpg);
+}
+
+#video1{
+    margin-left: 0;
+}
+
+#myVideo{
+    opacity: 0.6;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+}
+
+ul li {
+    position: relative;
+
+}
+
+li ul {
+    position: absolute;
+    left: 149px;
+    top: 0;
+    display: none;
+    
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: #E2144A;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-family: Cambria;
+}
+
+#svgBoneco{
+    background-color: white;
+    height: 320px;
+    width: 200px;
+    padding-left: 100px;
+    margin-left: 300px;
+}
+
+h1, h3{
+    font-family: monospace;
+    font-size: 20px;
+}
+
