@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo{
+    height: 40px;
+    width: 300px;
+}
+.banner{
+    height: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.texto{
+    text-align: right;
+    font-family: fantasy;
+    float: right;
+    margin-top: -30px;
+    margin-right: 15px;
+    font-size: 10px;
+}
+
+.menu-superior{
+    background-color: #4CAF50;
+    overflow: hidden;
+    font-family: fantasy;
+    padding-top: 20px;
+    height: 50px;
+}
+.menu-superior ul{
+    color: white;
+    margin-left: 15px; 
+    list-style-type: none;
+}
+.menu-superior ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    float: left;
+    padding: 5px;
+}
+.dropdown{
+    float: left;
+}
+.dropdown .dropdown-button{
+    padding: 5px;
+}
+.dropdown .dropdown-content{
+    margin-top: 30px;
+    position: absolute;
+    background-color: white;
+    display: none;
+}
+.menu-superior ul li a:hover, .dropdown .dropdown-button:hover{
+    background-color: white;   
+    cursor: pointer;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropdown-button{
+    background-color: white;
+    color: black;   
+}
+
+.menu-lateral{
+    overflow: hidden;
+    font-family: fantasy;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.dropdown:hover .dropdown-button2{
+    background-color: gray;
+}
+
+/*.menu-lateral ul{
+    margin-left: 15px; 
+    list-style-type: none;
+}
+.menu-lateral ul li{
+    text-decoration: none;
+    color: black;
+    display: block;
+    float: left;
+    padding: 5px;
+}*/
+
+h4{
+    margin-left: 20px;
+    font-family: fantasy;
+    margin-top: 20px;
+}
