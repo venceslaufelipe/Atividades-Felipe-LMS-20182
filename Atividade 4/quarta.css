@@ -54,6 +54,7 @@
     position: absolute;
     background-color: white;
     display: none;
+    
 }
 .menu-superior ul li a:hover, .dropdown .dropdown-button:hover{
     background-color: white;   

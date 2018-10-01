@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(44, 44, 44);
+}
+
+.tudo{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.banner{
+    height: 200px;
+    width: 70%;
+    background-color: white;
+}
+
+.menu{
+    margin-top: 180px;
+    height: 40px;
+    width: 100%;
+    background-color: gray;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.menu ul{
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.dropdown{
+    float: left;
+}
+
+.dropdown .dropdown-button{
+    padding: 5px;
+}
+
+.dropdown .dropdown-content{
+    position: absolute;
+    background-color: rgb(97, 97, 97);
+    display: none;
+    padding: 10px;
+    margin-top: -10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.menu-superior ul li a:hover, .dropdown .dropdown-button:hover{
+    padding-bottom: 22px;
+    background-color: white;   
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropdown-button{
+    background-color: rgb(54, 54, 54);
+    color: white;   
+    border-radius: 5px;
+}
+
+.conteudo{
+    display: flex;
+    height: 40vh;
+    /*justify-content: space-around;
+    align-items: flex-start;*/
+    background-color: white;
+}
+
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h1{
+    color: white;
+}
+
+.menu-lateral{
+    float: left;
+    background-color: brown;
+    margin-top: 36vh;
+    border-radius: 5px;
+}
+
+.menu-lateral ul{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.menu-lateral ul li{
+    padding: 10px;
+}
+
+.menu-lateral ul li:hover{
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+.menu-lateral2{
+    margin-top: 36vh;
+    float: right;
+    background-image: linear-gradient(brown, rgb(44, 44, 44));
+    width: 30vh;
+    height: 120vh;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -5px 0px 10px black;
+    color: white;
+}
+
+.animation{
+    margin-top: 30px;
+    margin-left: 30px;
+    position :relative;
+    -webkit-animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    0%   {top: 0px; left: 0px; }
+    25%  {top: 0px; left: 200px; }
+    50%  {top: 200px; left: 200px; }
+    75%  {top: 200px; left: 0px; }
+    100% {top: 0px; left: 0px; }
+}
+
+@media screen and (max-width: 600px){
+    .menu-lateral2{
+        float: left;
+        margin-top: 126vh;
+        margin-left: -19vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-lateral{
+        margin-top: 90vh;
+    }
+
+    .tudo{
+        margin-right: 30vh;
+    }
+}
