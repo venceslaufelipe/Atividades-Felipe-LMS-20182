@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu{
+            width: 100%;
+            background-color: goldenrod;
+            height: 28px;
+            font-family: 'Arial'
+        }
+
+        .menu ul{
+            list-style-type: none;
+        }
+
+        .menu ul li a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            float: left;
+            padding: 5px;
+        }
+        
+        li a{
+            padding: 15px;
+        }
+        li a:hover{
+            background-color: rgb(173, 113, 0);
+            color: white;
+        }
+        
+        img{
+            padding: 4px;
+        }
+
+        #check{
+            display: none;
+        }
+
+        input{
+            display: none;
+        }
+
+        label{
+            display: none;
+        }
+
+        .content{
+            width: 40%;
+            height: 2000px;
+            text-align: center;
+            margin-left: 409.8px;
+        }
+        .accordeon .accordeon-titulo{
+            background-color: rgb(150,150,150);
+            padding: 10px;
+            font-size: 18px;
+        }
+        .accordeon .accordeon-corpo{
+            background-color: rgb(240,240,240);
+            font-size: 20px;
+            max-height: 0px;
+            overflow: hidden;
+            transition: 1s;
+        }
+        .accordeon:hover .accordeon-corpo{
+            max-height: 350px;
+            padding: 10px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .container{
+                margin-left: 80px;
+            }
+            .menu{
+                width: 80px;
+                height: 100%;
+                background-color: goldenrod;
+                position: fixed;
+                padding-top: 30px;
+                left: -80px;
+                transition: all 2s linear;
+            }
+            
+            #check:checked ~ .menu{
+                transform: translate(80px, 0px);
+            }
+
+            img{
+                visibility: visible;
+            }
+
+            input{
+                display: inline-block;
+            }
+
+            label{
+                display: inline-block;
+            }
+
+            .icone{
+                position: fixed;
+                z-index: 2;
+                cursor: pointer;
+            }
+
+            .content{
+                width: 100%;
+                margin: 0;
+            }
+
+            li a:hover{
+                background-color: rgb(173, 113, 0);
+                color: white;
+                width: 88%;
+            }
+        }
+    </style>
+</head>
+<body>
+        <input type="checkbox" id="check">
+            <label class="icone" for="check">
+                <img src="button.png" height="20px" width="20px">
+            </label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Fotos</a></li>
+            <li><a href="">Vídeos</a></li>
+            <li><a href="">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+            <div class="accordeon">
+                <div class="accordeon-titulo">
+                    Assunto 1
+                </div>
+                <div class="accordeon-corpo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. 
+                        Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+                        ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. 
+                        Nam mattis, felis ut adipiscing.</p>
+                </div>
+            </div>
+            <div class="accordeon">
+                <div class="accordeon-titulo">
+                    Assunto 2
+                </div>
+                <div class="accordeon-corpo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. 
+                        Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+                        ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. 
+                        Nam mattis, felis ut adipiscing.</p>
+                </div>
+            </div>
+            <div class="accordeon">
+                <div class="accordeon-titulo">
+                    Assunto 3
+                </div>
+                <div class="accordeon-corpo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. 
+                        Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+                        ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. 
+                        Nam mattis, felis ut adipiscing.</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
